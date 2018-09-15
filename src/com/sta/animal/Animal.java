@@ -1,8 +1,5 @@
 package com.sta.animal;
 
-import com.sta.animal.behaviour.FlyBehaviour;
-import com.sta.animal.behaviour.SingBehaviour;
-
 public abstract class Animal {
 
 	public void performWalk() {

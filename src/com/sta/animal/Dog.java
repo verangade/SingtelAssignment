@@ -1,8 +1,5 @@
 package com.sta.animal;
 
-import com.sta.animal.behaviour.FlyBehaviour;
-import com.sta.animal.behaviour.SingBehaviour;
-
 public class Dog extends Animal{
 
 	@Override
