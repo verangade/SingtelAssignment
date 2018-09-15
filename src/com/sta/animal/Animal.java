@@ -1,6 +1,9 @@
 package com.sta.animal;
 
-public class Animal {
+public abstract class Animal {
+	
+	public abstract void fly();
+	
 	public void walk() {
 		System.out.println("I am walking");
 	}
