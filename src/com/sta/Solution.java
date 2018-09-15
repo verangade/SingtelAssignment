@@ -1,8 +1,11 @@
 package com.sta;
 
 import com.sta.animal.Bird;
+import com.sta.animal.Cat;
 import com.sta.animal.Chicken;
+import com.sta.animal.Dog;
 import com.sta.animal.Duck;
+import com.sta.animal.Parrot;
 import com.sta.animal.Rooster;
 
 public class Solution {
@@ -23,5 +26,19 @@ public class Solution {
 		Bird rooster = new Rooster();
 		rooster.performSing();
 		chicken.performFly();;
+		
+		//Parrot Living near Dog
+		Bird parrot1 = new Parrot(new Dog());
+		//Parrot Living near Cat
+		Bird parrot2 = new Parrot(new Cat());
+		//Parrot Living near Rooster
+		Bird parrot3 = new Parrot(new Rooster());
+		//Parrot Living near Duck
+		Bird parrot4 = new Parrot(new Duck());
+		
+		parrot1.performSing();
+		parrot2.performSing();
+		parrot3.performSing();
+		parrot4.performSing();
 	}
 }
