@@ -1,4 +1,4 @@
-# SingtelAssignment
+# Raveera Veranga - SingtelAssignment
 
 Tried to do most of the assignemnt with in the given period of time.
 Used Startegy Pattern.
