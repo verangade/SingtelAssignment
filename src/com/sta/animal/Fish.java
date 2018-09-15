@@ -12,10 +12,14 @@ import com.sta.animal.behaviour.impl.Swim;
 
 public class Fish extends Animal{
 	
-	FlyBehaviour flyBehaviour;
-	SingBehaviour singBehaviour;
-	WalkBehaviour walkBehaviour;
-	SwimBehaviour swimBehaviour;
+	//Attributes
+	private String body;
+	private String color;
+	
+	private FlyBehaviour flyBehaviour;
+	private SingBehaviour singBehaviour;
+	private WalkBehaviour walkBehaviour;
+	private SwimBehaviour swimBehaviour;
 	
 	public Fish() {
 		flyBehaviour = new NoFly();
@@ -46,6 +50,22 @@ public class Fish extends Animal{
 	public void performSwim() {
 		swimBehaviour.swim();
 		
+	}
+	
+	public String getBody() {
+		return body;
+	}
+
+	public void setBody(String body) {
+		this.body = body;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
 	}
 
 		
