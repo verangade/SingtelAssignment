@@ -1,10 +1,13 @@
 package com.sta;
 
+import javax.xml.stream.FactoryConfigurationError;
+
 import com.sta.animal.Bird;
 import com.sta.animal.Cat;
 import com.sta.animal.Chicken;
 import com.sta.animal.Dog;
 import com.sta.animal.Duck;
+import com.sta.animal.Fish;
 import com.sta.animal.Parrot;
 import com.sta.animal.Rooster;
 
@@ -40,5 +43,12 @@ public class Solution {
 		parrot2.performSing();
 		parrot3.performSing();
 		parrot4.performSing();
+		
+		
+		Fish fish = new Fish();
+		fish.performFly();
+		fish.performSing();
+		fish.performWalk();
+		fish.performSwim();
 	}
 }
