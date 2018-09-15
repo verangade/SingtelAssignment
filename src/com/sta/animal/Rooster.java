@@ -1,7 +1,9 @@
 package com.sta.animal;
 
-public class Rooster extends Chicken{
-	public String sing() {
-		return "Cock-a-doodle-doo";
+import com.sta.animal.behaviour.impl.CockADoodleDoo;
+
+public class Rooster extends Chicken {
+	public Rooster() {
+		setSingBehaviour(new CockADoodleDoo());
 	}
 }

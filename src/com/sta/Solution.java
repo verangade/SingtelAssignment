@@ -7,21 +7,21 @@ import com.sta.animal.Rooster;
 
 public class Solution {
 	public static void main(String[] args) {
-		Bird bird = new Bird();
+		/*Bird bird = new Bird();
 		bird.walk();
-		bird.fly();
-		bird.sing();
+		bird.performFly();
+		bird.sing();*/
 		
 		Duck duck = new Duck();
-		System.out.println(duck.sing());
+		duck.performSing();
 		duck.swim();
 		
 		Bird chicken = new Chicken();
-		System.out.println(chicken.sing());
-		chicken.fly();
+		chicken.performSing();
+		chicken.performFly();
 		
 		Bird rooster = new Rooster();
-		System.out.println(chicken.sing());
-		chicken.fly();
+		rooster.performSing();
+		chicken.performFly();;
 	}
 }

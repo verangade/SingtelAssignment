@@ -1,8 +1,12 @@
 package com.sta.animal;
 
+import com.sta.animal.behaviour.impl.Fly;
+import com.sta.animal.behaviour.impl.Quak;
+
 public class Duck extends Bird{
-	public String sing() {
-		return "Quack Quak";
+	public Duck() {
+		setFlyBehaviour(new Fly());
+		setSingBehaviour(new Quak());
 	}
 	
 	public void swim() {
